@@ -1,0 +1,140 @@
+body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#popup {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  z-index: 9999; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popupwindow {
+  width: 400px; 
+  height: auto; 
+  background-color: white; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+  border-radius: 20px; 
+  padding: 20px;
+}
+
+#popupwindow .popupheader {
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(63, 126, 181);
+  color: white;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#popupwindow .popupcontent {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+#popupwindow .popupcontent input[type="text"],
+#popupwindow .popupcontent input[type="password"],
+#popupwindow .popupcontent input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#popupwindow .popupcontent button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#popupwindow .popupcontent button:hover {
+  background-color: rgb(98, 225, 98);
+}
+
+#popupwindow .popupcontent .downdiv {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+#popupwindow .popupcontent .downdiv span {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#popupwindow .popupcontent .forgotpass {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+#popupwindow .close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #888;
+  cursor: pointer;
+}
+
+#popupwindow .close-button:hover {
+  color: black;
+}
+#header .signin:hover, #header .signintext:hover {
+  text-decoration: underline;
+  color: blue; 
+}
+
+#popupwindow .popupcontent button:hover {
+  background-color: rgb(5, 68, 5);
+  
+}
+
+#popupwindow .popupcontent .downdiv span:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  @media (max-width: 768px) {
+    #popupwindow {
+      width: 90%; 
+      padding: 15px;
+    }
+  
+    #popupwindow .popupcontent input[type="text"],
+    #popupwindow .popupcontent input[type="password"],
+    #popupwindow .popupcontent input[type="email"] {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    #popupwindow .popupheader {
+      font-size: 18px;
+    }
+  
+    #popupwindow .popupcontent button {
+      font-size: 14px;
+    }
+  }
+  
+}
+

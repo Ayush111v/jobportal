@@ -1,0 +1,162 @@
+#container{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  
+}
+#header{
+  background-color: white;
+  height: 25px;
+  
+}
+#header .logo{
+  height:50px;
+  width: 50px;
+  margin-top: 3px;
+  margin-left: 10px;
+  float:left;
+}
+
+#header .logotext{
+  margin-top: 0px;
+  position: relative;
+  float:left; 
+  font-weight: bold;
+  font-size: 30pt;
+}
+#header .logotext span{
+  color: red;
+}
+#header .signin{
+  position: relative;
+  height: 40px;
+  width:40px;
+  margin-top: 4px;
+  margin-right: 10px;
+  float:right;
+  cursor: pointer;
+}
+
+#header .signintext{
+  margin-top: 16px;
+  position:relative;
+  float:right;
+  font-weight: bold;
+  font-size: 16pt;
+  cursor: pointer;
+}
+#header .signintext:hover, .signin:hover+ .signintext{
+text-decoration: underline;
+}
+
+  #middle{
+      background-color: lightcyan;
+      height: calc(100% - 110px);
+  }
+
+  #middle .text1{
+    font-size: 20pt;
+    font-weight: bold;
+    color: green;
+    margin-top: 30px;
+    top: 40px;
+    margin-left: 15px;
+    
+  }
+  #middle .text2{
+    font-size: 50pt;
+    font-weight: bold;
+   
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
+  }
+  #middle .text3{
+    font-size: 20pt;
+    font-weight: bold;
+    
+    margin-top: 30px;
+    top: 40px;
+    margin-left:15px;
+  }
+  #middle .searchbox{
+    position: relative;
+    top: 80px;
+    margin-left: 30px;
+    background-color: white;
+    width: 800px;
+    height: 50px;
+    border-radius: 15px;
+    
+    
+  }
+  .searchbox .searchinput{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 12pt;
+    margin-left: 10px;
+    border-right: 2px solid lightgray;
+    
+  }
+  .searchbox .searchlocation{
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-left: 10px;
+    font-size: 12pt;
+  }
+  .searchbox .searchbutton{
+    background: green;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font: roboto;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   .searchbox .searchlogo{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+  
+   } 
+   .searchbox .locationlogo{
+    height:30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+   }
+
+
+
+ 
+#footer{
+      background-color: whitesmoke;
+      height: 50px;
+  }
+  #footer .footertext{
+    position: relative;
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: gray;
+    margin-top: 15px;
+  }
+  #footer .sicons{
+    position: relative;
+    float:right;
+    margin-top: 5px;
+    margin-right:10px;
+  }
+  #footer .sicons i{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
